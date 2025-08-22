@@ -4,8 +4,9 @@
   "description": "Simple workflow for working with and customizing Bootstrap 5",
   "main": "index.js",
   "scripts": {
-    "sass:build": "sass --no-source-map scss:css",
-    "sass:watch": "sass --no-source-map --watch scss:css"
+    "sass:build": "sass --no-source-map --style=compressed scss:css",
+    "sass:watch": "sass --no-source-map scss:css --watch",
+    "build": "npm run sass:build"  
   },
   "author": "Yves Theus",
   "license": "MIT",
